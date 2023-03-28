@@ -1,0 +1,15 @@
+/*reset*/
+* {margin:0;padding: 0;}
+a {text-decoration: none; color: inherit;}
+        
+/*layout*/
+body {font-family: 'NanumSquare', sans-serif !important;}
+.wrap {width: 700px; text-align: center;}
+.top {background: #eee;padding: 50px 0; }
+.top h1 {font-size: 55px; font-weight: 200; letter-spacing: -3px; margin-bottom: 30px;}
+.top h1 span {color:#6348ef;}
+.top p {margin-left: -35px;}
+.bottom {background: #39404a;padding: 50px 0; }
+.bottom h2 {font-size: 35px; font-weight: 200;color: #fff; }
+.bottom p {margin: 20px 0 30px;}
+.bottom a {background-color: #6348ef;background-image: url(img/img_03.png); background-repeat: no-repeat; background-position: left 45px center; background-size: 25px;  padding: 18px 80px; border-radius: 30px; font-size: 20px; color:#fff;}

@@ -1,0 +1,9 @@
+<!-- th:text : 스프링 MVC에 저장된 값 또는 프로퍼티 파일에서 가져온 값을 표시한댜.
+			   "\기호" 이스케이프 시퀀스 문자열 표시
+	 th:utext : th:text 기능 + HTML 태그 인식 - 이스케이프 시퀀스
+-->
+
+<p th:text="${greeting}">안녕하세요</p>
+<p th:utext="${greeting}">안녕하세요</p>
+
+<img src="../static/images/cloud.jpg" th:src="@{/images/cloud.jpg}"/>

@@ -1,0 +1,19 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>홈페이지 제목</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<td>${member.userId}</td>
+			<td th:text="${member.userId}">userId</td>
+		</tr>
+		<tr>
+			<td>${member.password}</td>
+			<td th:text="${member.password}">password</td>
+		</tr>
+	</table>
+</body>
+</html>
