@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Board List</title>
+</head>
+<body>
+	<h2>List 기능</h2>
+	<a href="register.html">글등록</a>
+	<table border="1">
+		<tr>
+			<td align="center" width="88">글번호
+			</td>
+			<td align="center" width="320">제목
+			</td>
+			<td align="center" width="100">내용
+			</td>
+			<td align="center" width="180">작성날짜
+			</td>
+		</tr>
+		
+		<tr th:if="${#lists.isEmpty(list)}">
+			<td colspan="4">
+				List is empty.
+			</td>
+		</tr>
+		
+		<tr th:each="board : ${list}">
+			<td align="center" th:text="${board.boardNo}">${board.boardNo}</td>
+			<td align="left"><a href="read.html" th:href="@{|read?boardNo=${board.boardNo}|}" th:text="${board.title}">${board.title}</a></td>
+			<td align="right" th:text="${board.writer}">${board.writer}</td>
+			<td align="center" th:text="${#temporals.format(board.regDate, 'yyyy-MM-dd HH:mm:ss')}">${board.regDate}</td>
+		</tr>
+		
+	</table>
+</body>
+</html>
